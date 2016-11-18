@@ -1,0 +1,32 @@
+{
+    "name":"ContentBox CBDEMO3 Module",
+    "version":"1.3.0",
+    "location":"gpickin/cbdemo3#v1.3.0",
+    "author":"Gavin Pickin",
+    "homepage":"https://github.com/gpickin/cbdemo3",
+    "documentation":"https://github.com/gpickin/cbdemo3",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/gpickin/cbdemo3"
+    },
+    "bugs":"https://github.com/gpickin/cbdemo3/issues",
+    "slug":"cbcms-box-cbdemo3",
+    "shortDescription":"Test Module for Contentbox 3",
+    "instructions":"https://github.com/gpickin/cbdemo3",
+    "type":"contentbox-modules",
+    "keywords":[
+        
+    ],
+    "scripts":{
+        "postVersion":"package set location='gpickin/cbdemo3#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "private":false,
+    "license":[
+        {
+            "type":"MIT",
+            "URL":"https://github.com/gpickin/cbdemo3/blob/master/LICENSE"
+        }
+    ]
+}
